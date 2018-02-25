@@ -1,0 +1,22 @@
+<!-- Main page div -->
+<div id="mainpage">
+	<p class="text-center">
+		¡Bienvenido al mejor chat para melómanos!<br>
+		<span class="glyphicon glyphicon-headphones"></span>
+		<span class="glyphicon glyphicon-backward"></span>
+		<span class="glyphicon glyphicon-play"></span>
+		<span class="glyphicon glyphicon-pause"></span>
+		<span class="glyphicon glyphicon-forward"></span>
+		<span class="glyphicon glyphicon-music"></span>
+	</p><br/>
+	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST">
+		<p class="text-center">
+			<button type="button" name="register" class="btn btn-info" onclick="cuentaButton()">Crear Cuenta</button><br/><br/>
+			<button type="button" name="login" class="btn btn-info" onclick="loginButton()">¿Ya tienes una cuenta? Logueate</button><br/><br/>
+			<button type="button" name="login" class="btn btn-info" onclick="bajaButton()">Dar de baja un usuario</button>
+		</p>
+	</form>
+</div>
+
+	
+

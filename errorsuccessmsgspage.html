@@ -1,0 +1,47 @@
+<!-- Error or success msgs page -->
+<div id="errorsuccessmsgspage">
+	<!-- Error que se muestra al intentar loguearse y no existir el usuario -->
+	<br/><div class='tab-pane errormsg' id='errorlogin'>
+		<p class='text-center'>
+			El usuario o contraseña no son válidos, deberías registrarte.
+			<br/><br/>
+			<button type="button" class="btn btn-info" onclick="cuentaButton()">Registrarse</button>
+		</p>
+	</div>
+	<!-- Mensaje de error que se muestra al intentar registrar un usuario ya existente -->
+	<p class='tab-pane errormsg text-center' id='errorregister'>
+		El nombre de usuario o la direccion de email ya estan registrados
+	</p>
+	<!-- Mensaje que se muestra al cerrar sesión el usuario -->
+	<div class='tab-pane successmsg' id='loguedoutmsg'>
+		<p class='text-center'>
+			Esperamos volver a verte pronto por aquí!
+		</p>
+	</div>
+	<!-- Mensaje que se muestra al dar de baja un usuario existente -->
+	<div class='tab-pane successmsg' id='dardebajasuccess'>
+		<div id='tabs' data-tabs='tabs'><br/>
+			<p class='text-center'>
+				El usuario se ha dado de baja correctamente.
+			</p>
+		</div>
+	</div>
+	<!-- Mensaje de error que se muestra al intentar dar de baja un usuario no existente -->
+	<br/><div class='tab-pane errormsg' id='dardebajaerror'>
+			<p class='text-center'>
+				El usuario que se está intentando dar de baja no existe.
+			</p>
+	</div>
+	<!-- Mensaje de éxito que se muestra al intentar registrar un usuario ya existente -->
+	<div class='tab-pane successmsg' id='successregister'>
+		<div id='tabs' data-tabs='tabs'>
+			<p class='text-center'>
+				Registro completado con exito, logueate para continuar
+			</p>
+		</div>
+	</div>
+	<!-- Boton que se redirige al formulario de login -->
+	<p class='text-center' id="loguearseButton">
+		<button type="button" class="btn btn-info" onclick="loginButton()">Loguearse</button>
+	</p>
+</div>
